@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.9
+3 info using node@v7.4.1-nightly20170104e07b6516d7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\node-sqlite3-promise',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Administrator\AppData\Roaming\npm-cache\@aminadav\node-sqlite3-promise\1.0.1\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle @aminadav/node-sqlite3-promise@1.0.1~prepublish: @aminadav/node-sqlite3-promise@1.0.1
+11 silly lifecycle @aminadav/node-sqlite3-promise@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ 'C:\\Users\\Administrator\\AppData\\Roaming\\npm-cache\\@aminadav\\node-sqlite3-promise\\1.0.1\\package.tgz',
+12 verbose tar pack   'C:\\node-sqlite3-promise' ]
+13 verbose tarball C:\Users\Administrator\AppData\Roaming\npm-cache\@aminadav\node-sqlite3-promise\1.0.1\package.tgz
+14 verbose folder C:\node-sqlite3-promise
+15 verbose addLocalTarball adding from inside cache C:\Users\Administrator\AppData\Roaming\npm-cache\@aminadav\node-sqlite3-promise\1.0.1\package.tgz
+16 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+17 silly cache afterAdd @aminadav/node-sqlite3-promise@1.0.1
+18 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\@aminadav\node-sqlite3-promise\1.0.1\package\package.json not in flight; writing
+19 verbose correctMkdir C:\Users\Administrator\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+20 verbose afterAdd C:\Users\Administrator\AppData\Roaming\npm-cache\@aminadav\node-sqlite3-promise\1.0.1\package\package.json written
+21 silly publish { name: '@aminadav/node-sqlite3-promise',
+21 silly publish   version: '1.0.1',
+21 silly publish   private: 'false',
+21 silly publish   description: 'Promise version of sqlite3.',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: '',
+21 silly publish   license: 'ISC',
+21 silly publish   dependencies: { bluebird: '^3.4.7', sqlite3: '^3.1.8' },
+21 silly publish   readme: '# node-sqlite3-promise\n\nPromise version of sqlite3.\n\n## How to use it?\n\nrequire(\'fs\').unlink(\'candelete.db\',function(){})\n\n\n```\nvar sqlite3=require(\'sqlite3-promise\')\n\ninit() \n\nasync function init(){\n\tvar db=new sqlite3.Database(\'candelete.db\')\n\tawait db.runAsync(\'create table abc (c tinyint)\')\n\tawait db.runAsync(\'insert into abc values (3)\')\n\tvar result = await db.allAsync(\'select * from abc\')\n\tconsole.log(result)  // {[a:3]}\n}\n```',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '4698ecce7d9eed6e6e38ee2bcb71dab038748920',
+21 silly publish   _id: '@aminadav/node-sqlite3-promise@1.0.1',
+21 silly publish   _shasum: 'd0dabf258b1aec05abf9005cb34922f65e7b3ace',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 verbose stack Error: This package has been marked as private
+23 verbose stack Remove the 'private' field from the package.json to publish it.
+23 verbose stack     at publish_ (C:\Program Files\nodejs\node_modules\npm\lib\publish.js:101:15)
+23 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+23 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+23 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+23 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+23 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:73:5
+23 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+23 verbose stack     at f (C:\Program Files\nodejs\node_modules\npm\node_modules\once\once.js:25:25)
+23 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\cache.js:363:16
+23 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\write-file-atomic\index.js:50:11
+24 verbose cwd C:\node-sqlite3-promise
+25 error Windows_NT 10.0.14393
+26 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+27 error node v7.4.1-nightly20170104e07b6516d7
+28 error npm  v3.10.9
+29 error This package has been marked as private
+29 error Remove the 'private' field from the package.json to publish it.
+30 error If you need help, you may report this error at:
+30 error     <https://github.com/npm/npm/issues>
+31 verbose exit [ 1, true ]

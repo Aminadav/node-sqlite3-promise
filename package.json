@@ -1,6 +1,7 @@
 {
-  "name": "node-sqlite3-promise",
-  "version": "1.0.0",
+  "name": "@aminadav/node-sqlite3-promise",
+  "version": "1.0.1",
+  "private":"false",
   "description": "",
   "main": "index.js",
   "scripts": {

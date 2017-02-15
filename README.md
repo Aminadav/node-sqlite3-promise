@@ -4,9 +4,6 @@ Promise version of sqlite3.
 
 ## How to use it?
 
-require('fs').unlink('candelete.db',function(){})
-
-
 ```
 var sqlite3=require('sqlite3-promise')
 
