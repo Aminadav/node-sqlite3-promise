@@ -1,3 +1,4 @@
 node_modules
 candelete.*
 npm-debug.log
+coverage

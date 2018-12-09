@@ -1,15 +1,23 @@
 {
   "name": "sqlite3-promise",
-  "version": "1.0.3",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Apply bluebird to promisify node-sqlite3",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aminadav/node-sqlite3-promise"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.4.7",
-    "sqlite3": "^3.1.8"
+    "bluebird": "^3.5.3",
+    "sqlite3": "^4.0.4"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0"
   }
 }
